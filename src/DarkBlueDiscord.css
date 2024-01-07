@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    font-feature-settings: "ss02", "ss03", "ss05";
+}
+
+:root {
+    --font-primary: 'Open Sans', 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-display: 'Open Sans', 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-headline: 'Open Sans', 'ABC Ginto Nord', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-code: 'Fira Code Light', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
+}
+
+:root {
+    --accent-color-light: hsl(217, 72%, 60%);
+    --accent-color-primary: hsl(217, 72%, 50%);
+    --accent-color-secondary: hsl(217, 72%, 40%);
+    --accent-color-tertiary: hsl(217, 72%, 30%);
+    --accent-color-dark: hsl(217, 72%, 10%);
+    --accent-color-darker: hsl(217, 72%, 8%);
+}
+
+:root {
+    --accent-gradient-primary: linear-gradient(90deg, hsl(217, 72%, 50%) 10%, hsl(217, 72%, 60%) 100%);
+    --accent-gradient-secondary: linear-gradient(90deg, hsl(217, 72%, 40%) 10%, hsl(217, 72%, 50%) 100%);
+    --accent-gradient-tertiary: linear-gradient(90deg, hsl(217, 72%, 30%) 10%, hsl(217, 72%, 40%) 100%);
+    --accent-gradient-dark: linear-gradient(90deg, hsl(217, 72%, 10%) 10%, hsl(217, 72%, 20%) 100%);
+}
+
+:root {
+    --saturation-factor-bg: 3.5;
+}
+
+:root {
+    --primary-100-hsl: 217 calc(var(--saturation-factor-bg, 1) * 0%) 98%;
+    --primary-130-hsl: 217 calc(var(--saturation-factor-bg, 1) * 13%) 96%;
+    --primary-160-hsl: 217 calc(var(--saturation-factor-bg, 1) * 7.5%) 93%;
+    --primary-200-hsl: 217 calc(var(--saturation-factor-bg, 1) * 7.5%) 90%;
+    --primary-230-hsl: 217 calc(var(--saturation-factor-bg, 1) * 7.5%) 87%;
+    --primary-260-hsl: 217 calc(var(--saturation-factor-bg, 1) * 7.5%) 84%;
+    --primary-300-hsl: 217 calc(var(--saturation-factor-bg, 1) * 7.5%) 79%;
+    --primary-330-hsl: 217 calc(var(--saturation-factor-bg, 1) * 7.5%) 74%;
+    --primary-345-hsl: 217 calc(var(--saturation-factor-bg, 1) * 7.5%) 68%;
+    --primary-360-hsl: 217 calc(var(--saturation-factor-bg, 1) * 7.5%) 62%;
+    --primary-400-hsl: 217 calc(var(--saturation-factor-bg, 1) * 7.5%) 55%;
+    --primary-430-hsl: 217 calc(var(--saturation-factor-bg, 1) * 7.5%) 47%;
+    --primary-460-hsl: 217 calc(var(--saturation-factor-bg, 1) * 7.5%) 10.5%;
+    --primary-500-hsl: 217 calc(var(--saturation-factor-bg, 1) * 7.5%) 9.75%;
+    --primary-530-hsl: 217 calc(var(--saturation-factor-bg, 1) * 7.5%) 9%;
+    --primary-560-hsl: 217 calc(var(--saturation-factor-bg, 1) * 7.5%) 8.25%;
+    --primary-600-hsl: 217 calc(var(--saturation-factor-bg, 1) * 7.5%) 7.5%;
+    --primary-630-hsl: 217 calc(var(--saturation-factor-bg, 1) * 7.5%) 6.75%;
+    --primary-645-hsl: 217 calc(var(--saturation-factor-bg, 1) * 7.5%) 6%;
+    --primary-660-hsl: 217 calc(var(--saturation-factor-bg, 1) * 7.5%) 5.25%;
+    --primary-700-hsl: 217 calc(var(--saturation-factor-bg, 1) * 7.5%) 4.5%;
+    --primary-730-hsl: 217 calc(var(--saturation-factor-bg, 1) * 7.5%) 3.75%;
+    --primary-760-hsl: 217 calc(var(--saturation-factor-bg, 1) * 7.5%) 3%;
+    --primary-800-hsl: 217 calc(var(--saturation-factor-bg, 1) * 7.5%) 2.25%;
+    --primary-830-hsl: 217 calc(var(--saturation-factor-bg, 1) * 7.5%) 1.5%;
+    --primary-860-hsl: 217 calc(var(--saturation-factor-bg, 1) * 7.5%) 0.75%;
+    --primary-900-hsl: 217 calc(var(--saturation-factor-bg, 1) * 7.5%) 0%;
+    --blue-100-hsl: 217 calc(var(--saturation-factor-color, 1) * 72%) 100%;
+    --blue-130-hsl: 217 calc(var(--saturation-factor-color, 1) * 72%) 96.9%;
+    --blue-160-hsl: 217 calc(var(--saturation-factor-color, 1) * 72%) 90%;
+    --blue-200-hsl: 217 calc(var(--saturation-factor-color, 1) * 72%) 85%;
+    --blue-230-hsl: 217 calc(var(--saturation-factor-color, 1) * 72%) 77%;
+    --blue-260-hsl: 217 calc(var(--saturation-factor-color, 1) * 72%) 70%;
+    --blue-300-hsl: 217 calc(var(--saturation-factor-color, 1) * 72%) 62%;
+    --blue-330-hsl: 217 calc(var(--saturation-factor-color, 1) * 72%) 55%;
+    --blue-345-hsl: 217 calc(var(--saturation-factor-color, 1) * 72%) 49%;
+    --blue-360-hsl: 217 calc(var(--saturation-factor-color, 1) * 72%) 44%;
+    --blue-400-hsl: 217 calc(var(--saturation-factor-color, 1) * 72%) 39%;
+    --blue-430-hsl: 217 calc(var(--saturation-factor-color, 1) * 72%) 34%;
+    --blue-460-hsl: 217 calc(var(--saturation-factor-color, 1) * 72%) 30%;
+    --blue-500-hsl: 217 calc(var(--saturation-factor-color, 1) * 72%) 27%;
+    --blue-530-hsl: 217 calc(var(--saturation-factor-color, 1) * 72%) 23%;
+    --blue-560-hsl: 217 calc(var(--saturation-factor-color, 1) * 72%) 20%;
+    --blue-600-hsl: 217 calc(var(--saturation-factor-color, 1) * 72%) 18%;
+    --blue-630-hsl: 217 calc(var(--saturation-factor-color, 1) * 72%) 16%;
+    --blue-660-hsl: 217 calc(var(--saturation-factor-color, 1) * 72%) 14%;
+    --blue-700-hsl: 217 calc(var(--saturation-factor-color, 1) * 72%) 12%;
+    --blue-730-hsl: 217 calc(var(--saturation-factor-color, 1) * 72%) 10%;
+    --blue-760-hsl: 217 calc(var(--saturation-factor-color, 1) * 72%) 8%;
+    --blue-800-hsl: 217 calc(var(--saturation-factor-color, 1) * 72%) 6%;
+    --blue-830-hsl: 217 calc(var(--saturation-factor-color, 1) * 72%) 4%;
+    --blue-860-hsl: 217 calc(var(--saturation-factor-color, 1) * 72%) 2%;
+    --blue-900-hsl: 217 calc(var(--saturation-factor-color, 1) * 72%) 0%;
+    --brand-100-hsl: var(--blue-100-hsl);
+    --brand-130-hsl: var(--blue-130-hsl);
+    --brand-160-hsl: var(--blue-160-hsl);
+    --brand-200-hsl: var(--blue-200-hsl);
+    --brand-230-hsl: var(--blue-230-hsl);
+    --brand-260-hsl: var(--blue-260-hsl);
+    --brand-300-hsl: var(--blue-300-hsl);
+    --brand-330-hsl: var(--blue-330-hsl);
+    --brand-345-hsl: var(--blue-345-hsl);
+    --brand-360-hsl: var(--blue-360-hsl);
+    --brand-400-hsl: var(--blue-400-hsl);
+    --brand-430-hsl: var(--blue-430-hsl);
+    --brand-460-hsl: var(--blue-460-hsl);
+    --brand-500-hsl: var(--blue-500-hsl);
+    --brand-530-hsl: var(--blue-530-hsl);
+    --brand-560-hsl: var(--blue-560-hsl);
+    --brand-600-hsl: var(--blue-600-hsl);
+    --brand-630-hsl: var(--blue-630-hsl);
+    --brand-660-hsl: var(--blue-660-hsl);
+    --brand-700-hsl: var(--blue-700-hsl);
+    --brand-730-hsl: var(--blue-730-hsl);
+    --brand-760-hsl: var(--blue-760-hsl);
+    --brand-800-hsl: var(--blue-800-hsl);
+    --brand-830-hsl: var(--blue-830-hsl);
+    --brand-860-hsl: var(--blue-860-hsl);
+    --brand-900-hsl: var(--blue-900-hsl);
+}
+
+.mention__1afd3 {
+    background: var(--accent-gradient-primary);
+}
+
+.numberBadge__50328.base__92a12.eyebrow__60985.baseShapeRound__95d0f {
+    background: var(--accent-gradient-primary);
+}
+
+.tabBar__73938 .addFriend__80542.addFriend__80542.addFriend__80542 {
+    background: var(--accent-gradient-primary);
+}
+
+.tabBar__73938 .addFriend__80542.addFriend__80542.addFriend__80542[aria-selected=true] {
+    background: transparent;
+    color: var(--accent-color-primary);
+}
+
+.lookFilled__19298.colorGreen__5f181 {
+    background: linear-gradient(90deg, hsl(126, 42%, 30%) 10%, hsl(126, 42%, 40%) 100%);
+}
+
+.button__8ec71.button_afdfd9.lookFilled__19298.colorGreen__5f181.buttonSize_b01b54.grow__4c8a4,
+.actionButton_dac582.button_afdfd9.lookFilled__19298.colorGreen__5f181.sizeSmall__71a98.grow__4c8a4 {
+    background: var(--accent-gradient-primary);
+}
+
+.lookFilled__19298.colorBrand_b2253e {
+    background: var(--accent-gradient-primary);
+}
+
+.text-sm-bold__33e9d.pro_db62e1 {
+    color: var(--accent-color-primary) !important;
+}
+
+.botTagRegular_c89c9a {
+    background: var(--accent-gradient-primary);
+}
+
+.wrapper_d281dd:hover .childWrapper__01b9c, .wrapper_d281dd.selected_f5ec8e .childWrapper__01b9c {
+    background: var(--accent-gradient-primary);
+}
+
+.username__11d8c span::before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    left: 0;
+    top: 0;
+    border-left: 3px solid;
+}
+
+.username__11d8c span::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    left: 0;
+    top: 0;
+    background-color: currentColor;
+    opacity: 0.15;
+}
+
+.roleRemoveButton__737f2 {
+    position: static;
+}
+
+.roles__74a2b .roleCircle_bae511:before, .rolesList__55c4f .roleCircle_bae511:before {
+    content: "";
+    border-radius: 3px;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    background: inherit;
+    opacity: .2;
+}
+
+.role__631a3 {
+    position: relative;
+}
+
+.roleRemoveButton__737f2 svg {
+    left: 0;
+    padding-left: 14px;
+}
+
+.wrapper__7bcde:hover .link__95dc0 {
+    background: var(--accent-gradient-dark);
+}
+
+.modeSelected__487d6 .link__95dc0, .modeSelected__487d6:hover .link__95dc0 {
+    background: var(--accent-color-primary);
+}
+
+.modeUnreadImportant_efb53e .icon_eff5d4, .modeUnreadImportant_efb53e:hover .icon_eff5d4, .modeSelected__487d6 .icon_eff5d4, .modeSelected__487d6:hover .icon_eff5d4 {
+    color: var(--interactive-active);
+}
+
+.container__871ba {
+    background-color: var(--primary-400) !important;
+}
+
+.container__871ba.checked__6bdb0 {
+    background-color: var(--blue-360) !important;
+}
+
+.container__871ba svg svg path {
+    fill: var(--primary-400) !important;
+}
+
+.container__871ba.checked__6bdb0 svg svg path {
+    fill: var(--blue-360) !important;
+}
+
+.defaultValue__4f02f .markValue_e7a6e4 {
+    color: var(--accent-color-primary);
+}
+
+.mentionsBar__4b47a {
+    background: var(--accent-gradient-primary);
+}
+
+.newMessagesBar__8b6d7 {
+    background: var(--accent-gradient-primary);
+}
+
+.custom-theme-background .isUnread__6f880, .isUnread__6f880 {
+    border-color: var(--accent-color-primary);
+}
+
+.isUnread__6f880 .content_d67847 {
+    color: var(--accent-color-primary);
+}
+
+.unreadPill__715fc {
+    background-color: var(--accent-color-primary);
+}
+
+.unreadPill__715fc.endCap__95d53 svg path {
+    fill: var(--accent-color-primary);
+    color: var(--accent-color-primary);
+}
+
+.flowerStar_a9981e path {
+    fill: var(--accent-color-primary);
+}
+
+.item_f9d377 {
+    background: var(--accent-gradient-primary);
+}
+
+.interactiveSelected_ec846b {
+    background: var(--accent-gradient-primary);
+}
+
+.interactive__776ee:hover, .interactive__776ee:focus-within {
+    background: var(--accent-gradient-dark);
+}
+
+.theme-dark .container__7590f {
+    background-color: var(--primary-630);
+}
+
+.theme-dark .header__60bef {
+    background-color: var(--primary-600);
+}
+
+.theme-dark .innerHeader_afca2f:after {
+    background: none;
+}
+
+.mentioned__58017 {
+    background-color: var(--accent-color-dark);
+}
+
+.message__80c10.mentioned__58017.selected_fd9051, .mouse-mode.full-motion .mentioned__58017:hover {
+    background-color: var(--accent-color-darker);
+}
+
+.mentioned__58017:before {
+    background-color: var(--accent-color-primary);
+}
